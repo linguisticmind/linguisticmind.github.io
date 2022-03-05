@@ -1,0 +1,738 @@
+html {
+  font-family: Extra, 'Source Serif Pro', 'Source Han Serif';
+  font-size: 24px;
+  background-color: #202020;
+  color: #d0d0d0;
+}
+body {
+  margin: calc(24px * 1.5);
+}
+h1 {
+  text-align: center;
+}
+span.subheading {
+  display: block;
+  font-size: 66.6%;
+  font-style: italic;
+}
+.intervening-heading {
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+dfn {
+  font-style: normal;
+  font-weight: bold;
+}
+a {
+  color: #b0b0b0;
+}
+sup {
+  font-weight: normal;
+  font-style: normal;
+}
+figure {
+  margin: 1em 40px;
+}
+div.div-by {
+  text-align: center;
+}
+div.div-by > div.div-by-author {
+  font-size: 0.95em;
+  font-variant: small-caps;
+}
+div.div-by > div.div-by-author > span.span-by-entity {
+  font-variant: normal;
+}
+div.div-by > div.div-by-license {
+  font-family: 'Source Sans Pro';
+  font-size: 0.66em;
+  color: #b0b0b0;
+  margin-top: 0.25em;
+}
+div.div-by > div.div-by-license a {
+  color: #808080;
+}
+div.div-nota-bene {
+  margin: 2em 40px;
+  padding: 0 1em;
+  border: 3px solid #d0d0d0;
+}
+div.div-frame {
+  padding: 0 1em;
+  border: 2px solid #d0d0d0;
+}
+div.div-license {
+  font-family: 'Source Sans Pro';
+  text-align: center;
+  font-size: 0.66em;
+  color: #b0b0b0;
+}
+div.div-license a {
+  color: #808080;
+}
+b.b-primary {
+  font-weight: normal;
+  text-decoration: underline solid #d0d0d0 2px;
+}
+b.b-secondary {
+  font-weight: normal;
+  text-decoration: underline double #d0d0d0 2px;
+}
+b.b-grouping {
+  font-weight: normal;
+  text-decoration: overline dashed #b0b0b0 1px;
+}
+s.s-incorrect {
+  color: #b0b0b0;
+  text-decoration: line-through solid #b0b0b0 2px;
+}
+b.b-morpheme,
+b.b-syntagmeme {
+  font-weight: normal;
+}
+b.b-morpheme-null,
+b.b-syntagmeme-null {
+  color: #808080;
+}
+span.span-morpheme-separator {
+  color: #505050;
+}
+span.span-n-a {
+  font-family: 'DejaVu Sans Mono';
+  font-size: 0.66em;
+  font-style: normal;
+  vertical-align: 0.2em;
+  color: #505050;
+}
+span.span-text-invisible {
+  visibility: hidden;
+}
+span.span-text-light-dim {
+  color: #b0b0b0;
+}
+span.span-text-medium-dim {
+  color: #808080;
+}
+span.span-text-heavy-dim {
+  color: #505050;
+}
+span.span-text-extra-heavy-dim {
+  color: #404040;
+}
+div.footnotes-block div.footnotes-block-extra-space-on-top {
+  padding-top: 1em;
+}
+div.footnotes-block hr.footnotes-separator {
+  border: none;
+  border-top: solid 1px #d0d0d0;
+  margin: 0;
+  width: 33.33%;
+}
+div.footnotes-block div.footnotes {
+  font-size: 0.87em;
+  margin: 1em 0;
+}
+div.footnotes-block div.footnotes > div.footnote > p {
+  margin: 0.5em 0;
+}
+.table-base {
+  border-collapse: collapse;
+}
+.table-base > tr > th,
+.table-base > thead > tr > th,
+.table-base > tbody > tr > th,
+.table-base > tfoot > tr > th,
+.table-base > tr > td,
+.table-base > thead > tr > td,
+.table-base > tbody > tr > td,
+.table-base > tfoot > tr > td {
+  border: solid 1px #d0d0d0;
+}
+.table-base > tr > th:not(.rotate-outer),
+.table-base > thead > tr > th:not(.rotate-outer),
+.table-base > tbody > tr > th:not(.rotate-outer),
+.table-base > tfoot > tr > th:not(.rotate-outer),
+.table-base > tr > td:not(.rotate-outer),
+.table-base > thead > tr > td:not(.rotate-outer),
+.table-base > tbody > tr > td:not(.rotate-outer),
+.table-base > tfoot > tr > td:not(.rotate-outer) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.table-borderless {
+  border-collapse: collapse;
+}
+.table-borderless > tr > th,
+.table-borderless > thead > tr > th,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > th,
+.table-borderless > tr > td,
+.table-borderless > thead > tr > td,
+.table-borderless > tbody > tr > td,
+.table-borderless > tfoot > tr > td {
+  border: none;
+  padding: 0;
+}
+.table-borderless > tr > th,
+.table-borderless > thead > tr > th,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > th {
+  text-align: left;
+}
+.table-borderless > tr > th:not(:last-child),
+.table-borderless > thead > tr > th:not(:last-child),
+.table-borderless > tbody > tr > th:not(:last-child),
+.table-borderless > tfoot > tr > th:not(:last-child),
+.table-borderless > tr > td:not(:last-child),
+.table-borderless > thead > tr > td:not(:last-child),
+.table-borderless > tbody > tr > td:not(:last-child),
+.table-borderless > tfoot > tr > td:not(:last-child) {
+  padding-right: 10px;
+}
+.table-plain-headers > tr > th,
+.table-plain-headers > thead > tr > th,
+.table-plain-headers > tbody > tr > th,
+.table-plain-headers > tfoot > tr > th {
+  font-weight: normal;
+}
+.table-top-aligned > tr > th,
+.table-top-aligned > thead > tr > th,
+.table-top-aligned > tbody > tr > th,
+.table-top-aligned > tfoot > tr > th,
+.table-top-aligned > tr > td,
+.table-top-aligned > thead > tr > td,
+.table-top-aligned > tbody > tr > td,
+.table-top-aligned > tfoot > tr > td {
+  vertical-align: top;
+}
+table > tr > th.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > thead > tr > th.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > tbody > tr > th.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > tfoot > tr > th.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > tr > td.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > thead > tr > td.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > tbody > tr > td.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right,
+table > tfoot > tr > td.th-td-diagonally-split-cell.th-td-diagonally-split-cell-top-left-to-bottom-right {
+  background: linear-gradient(to top right, transparent calc(50% - 1px), #d0d0d0, transparent calc(50% + 1px));
+}
+table > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > thead > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > tbody > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > tfoot > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > thead > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > tbody > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table > tfoot > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text {
+  position: absolute;
+}
+table > tr > th.th-td-n-a,
+table > thead > tr > th.th-td-n-a,
+table > tbody > tr > th.th-td-n-a,
+table > tfoot > tr > th.th-td-n-a,
+table > tr > td.th-td-n-a,
+table > thead > tr > td.th-td-n-a,
+table > tbody > tr > td.th-td-n-a,
+table > tfoot > tr > td.th-td-n-a {
+  text-align: center;
+}
+table.table-custom-figure {
+  border-collapse: collapse;
+}
+table.table-custom-figure > tr > th,
+table.table-custom-figure > thead > tr > th,
+table.table-custom-figure > tbody > tr > th,
+table.table-custom-figure > tfoot > tr > th,
+table.table-custom-figure > tr > td,
+table.table-custom-figure > thead > tr > td,
+table.table-custom-figure > tbody > tr > td,
+table.table-custom-figure > tfoot > tr > td {
+  border: none;
+  padding: 0;
+}
+table.table-custom-figure > tr > th,
+table.table-custom-figure > thead > tr > th,
+table.table-custom-figure > tbody > tr > th,
+table.table-custom-figure > tfoot > tr > th {
+  text-align: left;
+}
+table.table-custom-figure > tr > th:not(:last-child),
+table.table-custom-figure > thead > tr > th:not(:last-child),
+table.table-custom-figure > tbody > tr > th:not(:last-child),
+table.table-custom-figure > tfoot > tr > th:not(:last-child),
+table.table-custom-figure > tr > td:not(:last-child),
+table.table-custom-figure > thead > tr > td:not(:last-child),
+table.table-custom-figure > tbody > tr > td:not(:last-child),
+table.table-custom-figure > tfoot > tr > td:not(:last-child) {
+  padding-right: 10px;
+}
+table.table-custom-figure > tr > th.th-custom-figure-header,
+table.table-custom-figure > thead > tr > th.th-custom-figure-header,
+table.table-custom-figure > tbody > tr > th.th-custom-figure-header,
+table.table-custom-figure > tfoot > tr > th.th-custom-figure-header {
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  padding-bottom: 1em;
+}
+table.table-custom-figure > tr > td.td-custom-figure-legend div.div-custom-figure-legend,
+table.table-custom-figure > thead > tr > td.td-custom-figure-legend div.div-custom-figure-legend,
+table.table-custom-figure > tbody > tr > td.td-custom-figure-legend div.div-custom-figure-legend,
+table.table-custom-figure > tfoot > tr > td.td-custom-figure-legend div.div-custom-figure-legend {
+  font-size: 0.87em;
+  padding: 1em;
+  border: dashed 1px #808080;
+  border-radius: 10px;
+}
+table.table-custom-figure > tr > td.td-custom-figure-legend div.div-custom-figure-legend > div.div-custom-figure-legend-heading,
+table.table-custom-figure > thead > tr > td.td-custom-figure-legend div.div-custom-figure-legend > div.div-custom-figure-legend-heading,
+table.table-custom-figure > tbody > tr > td.td-custom-figure-legend div.div-custom-figure-legend > div.div-custom-figure-legend-heading,
+table.table-custom-figure > tfoot > tr > td.td-custom-figure-legend div.div-custom-figure-legend > div.div-custom-figure-legend-heading {
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  font-size: 1.12em;
+}
+table.table-custom-figure > tr > td.td-custom-figure-legend div.div-custom-figure-legend > p:last-child,
+table.table-custom-figure > thead > tr > td.td-custom-figure-legend div.div-custom-figure-legend > p:last-child,
+table.table-custom-figure > tbody > tr > td.td-custom-figure-legend div.div-custom-figure-legend > p:last-child,
+table.table-custom-figure > tfoot > tr > td.td-custom-figure-legend div.div-custom-figure-legend > p:last-child {
+  margin-bottom: 0;
+}
+table.table-custom-figure > tr:last-of-type > td.td-custom-figure-caption > p:last-child,
+table.table-custom-figure > thead > tr:last-of-type > td.td-custom-figure-caption > p:last-child,
+table.table-custom-figure > tbody > tr:last-of-type > td.td-custom-figure-caption > p:last-child,
+table.table-custom-figure > tfoot > tr:last-of-type > td.td-custom-figure-caption > p:last-child {
+  margin-bottom: 0;
+}
+table.table-custom-figure > tr > td.td-custom-figure-spacer-row,
+table.table-custom-figure > thead > tr > td.td-custom-figure-spacer-row,
+table.table-custom-figure > tbody > tr > td.td-custom-figure-spacer-row,
+table.table-custom-figure > tfoot > tr > td.td-custom-figure-spacer-row {
+  padding-top: 1em;
+}
+table.table-custom-figure-legend {
+  border-collapse: collapse;
+}
+table.table-custom-figure-legend > tr > th,
+table.table-custom-figure-legend > thead > tr > th,
+table.table-custom-figure-legend > tbody > tr > th,
+table.table-custom-figure-legend > tfoot > tr > th,
+table.table-custom-figure-legend > tr > td,
+table.table-custom-figure-legend > thead > tr > td,
+table.table-custom-figure-legend > tbody > tr > td,
+table.table-custom-figure-legend > tfoot > tr > td {
+  border: none;
+  padding: 0;
+}
+table.table-custom-figure-legend > tr > th,
+table.table-custom-figure-legend > thead > tr > th,
+table.table-custom-figure-legend > tbody > tr > th,
+table.table-custom-figure-legend > tfoot > tr > th {
+  text-align: left;
+}
+table.table-custom-figure-legend > tr > th:not(:last-child),
+table.table-custom-figure-legend > thead > tr > th:not(:last-child),
+table.table-custom-figure-legend > tbody > tr > th:not(:last-child),
+table.table-custom-figure-legend > tfoot > tr > th:not(:last-child),
+table.table-custom-figure-legend > tr > td:not(:last-child),
+table.table-custom-figure-legend > thead > tr > td:not(:last-child),
+table.table-custom-figure-legend > tbody > tr > td:not(:last-child),
+table.table-custom-figure-legend > tfoot > tr > td:not(:last-child) {
+  padding-right: 10px;
+}
+table.table-custom-figure-legend > tr > th,
+table.table-custom-figure-legend > thead > tr > th,
+table.table-custom-figure-legend > tbody > tr > th,
+table.table-custom-figure-legend > tfoot > tr > th {
+  font-weight: normal;
+}
+table.table-custom-figure-legend > tr > th,
+table.table-custom-figure-legend > thead > tr > th,
+table.table-custom-figure-legend > tbody > tr > th,
+table.table-custom-figure-legend > tfoot > tr > th,
+table.table-custom-figure-legend > tr > td,
+table.table-custom-figure-legend > thead > tr > td,
+table.table-custom-figure-legend > tbody > tr > td,
+table.table-custom-figure-legend > tfoot > tr > td {
+  vertical-align: top;
+}
+table.table-custom-figure-legend > tr > td:nth-child(3) > p,
+table.table-custom-figure-legend > thead > tr > td:nth-child(3) > p,
+table.table-custom-figure-legend > tbody > tr > td:nth-child(3) > p,
+table.table-custom-figure-legend > tfoot > tr > td:nth-child(3) > p {
+  margin: 0.5em 0;
+}
+table.table-custom-figure-legend > tr > td:nth-child(3) > p:first-child,
+table.table-custom-figure-legend > thead > tr > td:nth-child(3) > p:first-child,
+table.table-custom-figure-legend > tbody > tr > td:nth-child(3) > p:first-child,
+table.table-custom-figure-legend > tfoot > tr > td:nth-child(3) > p:first-child {
+  margin-top: 0;
+}
+table.table-custom-figure-content-list {
+  border-collapse: collapse;
+}
+table.table-custom-figure-content-list > tr > th,
+table.table-custom-figure-content-list > thead > tr > th,
+table.table-custom-figure-content-list > tbody > tr > th,
+table.table-custom-figure-content-list > tfoot > tr > th,
+table.table-custom-figure-content-list > tr > td,
+table.table-custom-figure-content-list > thead > tr > td,
+table.table-custom-figure-content-list > tbody > tr > td,
+table.table-custom-figure-content-list > tfoot > tr > td {
+  border: none;
+  padding: 0;
+}
+table.table-custom-figure-content-list > tr > th,
+table.table-custom-figure-content-list > thead > tr > th,
+table.table-custom-figure-content-list > tbody > tr > th,
+table.table-custom-figure-content-list > tfoot > tr > th {
+  text-align: left;
+}
+table.table-custom-figure-content-list > tr > th:not(:last-child),
+table.table-custom-figure-content-list > thead > tr > th:not(:last-child),
+table.table-custom-figure-content-list > tbody > tr > th:not(:last-child),
+table.table-custom-figure-content-list > tfoot > tr > th:not(:last-child),
+table.table-custom-figure-content-list > tr > td:not(:last-child),
+table.table-custom-figure-content-list > thead > tr > td:not(:last-child),
+table.table-custom-figure-content-list > tbody > tr > td:not(:last-child),
+table.table-custom-figure-content-list > tfoot > tr > td:not(:last-child) {
+  padding-right: 10px;
+}
+table.table-custom-figure-content-list > tr > th,
+table.table-custom-figure-content-list > thead > tr > th,
+table.table-custom-figure-content-list > tbody > tr > th,
+table.table-custom-figure-content-list > tfoot > tr > th {
+  font-weight: normal;
+}
+table.table-custom-figure-content-list > tr > th,
+table.table-custom-figure-content-list > thead > tr > th,
+table.table-custom-figure-content-list > tbody > tr > th,
+table.table-custom-figure-content-list > tfoot > tr > th,
+table.table-custom-figure-content-list > tr > td,
+table.table-custom-figure-content-list > thead > tr > td,
+table.table-custom-figure-content-list > tbody > tr > td,
+table.table-custom-figure-content-list > tfoot > tr > td {
+  vertical-align: top;
+}
+table.table-custom-figure-content-list .custom-figure-content-list-list-item-description {
+  font-style: italic;
+}
+table.table-custom-figure-content-list .custom-figure-content-list-list-item-description > b,
+table.table-custom-figure-content-list .custom-figure-content-list-list-item-description > i {
+  font-style: normal;
+}
+table.table-custom-figure-content-list > tr > td:nth-child(3),
+table.table-custom-figure-content-list > thead > tr > td:nth-child(3),
+table.table-custom-figure-content-list > tbody > tr > td:nth-child(3),
+table.table-custom-figure-content-list > tfoot > tr > td:nth-child(3) {
+  font-style: italic;
+}
+table.table-custom-figure-content-list > tr > td:nth-child(3) > b,
+table.table-custom-figure-content-list > thead > tr > td:nth-child(3) > b,
+table.table-custom-figure-content-list > tbody > tr > td:nth-child(3) > b,
+table.table-custom-figure-content-list > tfoot > tr > td:nth-child(3) > b,
+table.table-custom-figure-content-list > tr > td:nth-child(3) > i,
+table.table-custom-figure-content-list > thead > tr > td:nth-child(3) > i,
+table.table-custom-figure-content-list > tbody > tr > td:nth-child(3) > i,
+table.table-custom-figure-content-list > tfoot > tr > td:nth-child(3) > i {
+  font-style: normal;
+}
+table.table-custom-figure-content-list > tr > td.td-custom-figure-content-list-list-item-description-below,
+table.table-custom-figure-content-list > thead > tr > td.td-custom-figure-content-list-list-item-description-below,
+table.table-custom-figure-content-list > tbody > tr > td.td-custom-figure-content-list-list-item-description-below,
+table.table-custom-figure-content-list > tfoot > tr > td.td-custom-figure-content-list-list-item-description-below {
+  font-style: italic;
+  padding-top: 1em;
+}
+table.table-custom-figure-content-list > tr > td.td-custom-figure-content-list-list-item-description-below > b,
+table.table-custom-figure-content-list > thead > tr > td.td-custom-figure-content-list-list-item-description-below > b,
+table.table-custom-figure-content-list > tbody > tr > td.td-custom-figure-content-list-list-item-description-below > b,
+table.table-custom-figure-content-list > tfoot > tr > td.td-custom-figure-content-list-list-item-description-below > b,
+table.table-custom-figure-content-list > tr > td.td-custom-figure-content-list-list-item-description-below > i,
+table.table-custom-figure-content-list > thead > tr > td.td-custom-figure-content-list-list-item-description-below > i,
+table.table-custom-figure-content-list > tbody > tr > td.td-custom-figure-content-list-list-item-description-below > i,
+table.table-custom-figure-content-list > tfoot > tr > td.td-custom-figure-content-list-list-item-description-below > i {
+  font-style: normal;
+}
+table.table-custom-figure-content-list > tr > td.td-table-custom-figure-content-list-attribution,
+table.table-custom-figure-content-list > thead > tr > td.td-table-custom-figure-content-list-attribution,
+table.table-custom-figure-content-list > tbody > tr > td.td-table-custom-figure-content-list-attribution,
+table.table-custom-figure-content-list > tfoot > tr > td.td-table-custom-figure-content-list-attribution {
+  font-family: 'Source Sans Pro';
+  font-size: 0.5em;
+  font-style: italic;
+  color: #505050;
+}
+table.table-custom-figure-content-list > tr > td.td-table-custom-figure-content-list-attribution a,
+table.table-custom-figure-content-list > thead > tr > td.td-table-custom-figure-content-list-attribution a,
+table.table-custom-figure-content-list > tbody > tr > td.td-table-custom-figure-content-list-attribution a,
+table.table-custom-figure-content-list > tfoot > tr > td.td-table-custom-figure-content-list-attribution a {
+  color: #404040;
+}
+table.table-custom-figure-content-list > tr > td.td-table-custom-figure-content-list-attribution > p:last-child,
+table.table-custom-figure-content-list > thead > tr > td.td-table-custom-figure-content-list-attribution > p:last-child,
+table.table-custom-figure-content-list > tbody > tr > td.td-table-custom-figure-content-list-attribution > p:last-child,
+table.table-custom-figure-content-list > tfoot > tr > td.td-table-custom-figure-content-list-attribution > p:last-child {
+  margin-bottom: 0;
+}
+table.table-custom-figure-content-list > tr > td.td-custom-figure-content-list-spacer-row,
+table.table-custom-figure-content-list > thead > tr > td.td-custom-figure-content-list-spacer-row,
+table.table-custom-figure-content-list > tbody > tr > td.td-custom-figure-content-list-spacer-row,
+table.table-custom-figure-content-list > tfoot > tr > td.td-custom-figure-content-list-spacer-row {
+  padding-top: 1em;
+}
+table.table-paradigm-person-number {
+  border-collapse: collapse;
+}
+table.table-paradigm-person-number > tr > th,
+table.table-paradigm-person-number > thead > tr > th,
+table.table-paradigm-person-number > tbody > tr > th,
+table.table-paradigm-person-number > tfoot > tr > th,
+table.table-paradigm-person-number > tr > td,
+table.table-paradigm-person-number > thead > tr > td,
+table.table-paradigm-person-number > tbody > tr > td,
+table.table-paradigm-person-number > tfoot > tr > td {
+  border: solid 1px #d0d0d0;
+}
+table.table-paradigm-person-number > tr > th:not(.rotate-outer),
+table.table-paradigm-person-number > thead > tr > th:not(.rotate-outer),
+table.table-paradigm-person-number > tbody > tr > th:not(.rotate-outer),
+table.table-paradigm-person-number > tfoot > tr > th:not(.rotate-outer),
+table.table-paradigm-person-number > tr > td:not(.rotate-outer),
+table.table-paradigm-person-number > thead > tr > td:not(.rotate-outer),
+table.table-paradigm-person-number > tbody > tr > td:not(.rotate-outer),
+table.table-paradigm-person-number > tfoot > tr > td:not(.rotate-outer) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+table.table-paradigm-person-number > tr > td.td-paradigm-person-number-pronoun,
+table.table-paradigm-person-number > thead > tr > td.td-paradigm-person-number-pronoun,
+table.table-paradigm-person-number > tbody > tr > td.td-paradigm-person-number-pronoun,
+table.table-paradigm-person-number > tfoot > tr > td.td-paradigm-person-number-pronoun {
+  border-right: none;
+}
+table.table-paradigm-person-number > tr > td.td-paradigm-person-number-pronoun > span.span-paradigm-person-number-pronoun-text,
+table.table-paradigm-person-number > thead > tr > td.td-paradigm-person-number-pronoun > span.span-paradigm-person-number-pronoun-text,
+table.table-paradigm-person-number > tbody > tr > td.td-paradigm-person-number-pronoun > span.span-paradigm-person-number-pronoun-text,
+table.table-paradigm-person-number > tfoot > tr > td.td-paradigm-person-number-pronoun > span.span-paradigm-person-number-pronoun-text {
+  font-style: italic;
+}
+table.table-paradigm-person-number > tr > td.td-paradigm-person-number-verb-form,
+table.table-paradigm-person-number > thead > tr > td.td-paradigm-person-number-verb-form,
+table.table-paradigm-person-number > tbody > tr > td.td-paradigm-person-number-verb-form,
+table.table-paradigm-person-number > tfoot > tr > td.td-paradigm-person-number-verb-form {
+  border-left: none;
+}
+table.table-paradigm-person-number > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > thead > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > tbody > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > tfoot > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > thead > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > tbody > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text,
+table.table-paradigm-person-number > tfoot > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text {
+  font-size: 0.5em;
+}
+table.table-paradigm-person-number > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > thead > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > tbody > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > tfoot > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > thead > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > tbody > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right,
+table.table-paradigm-person-number > tfoot > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-top-right {
+  transform: translate(-8%, -105%);
+}
+table.table-paradigm-person-number > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > thead > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > tbody > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > tfoot > tr > th.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > thead > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > tbody > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left,
+table.table-paradigm-person-number > tfoot > tr > td.th-td-diagonally-split-cell > span.span-diagonally-split-cell-text-bottom-left {
+  transform: translate(-105%, -8%);
+}
+table.table-stack-lexical-meaning-grammatical-meaning {
+  border-collapse: collapse;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  border: dotted 2px #505050;
+  border-radius: 5px;
+  padding: 5px;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tr > td,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > td,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > td,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > td {
+  border: none;
+  padding: 0;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > th {
+  text-align: left;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > th:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > th:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > th:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > th:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > tr > td:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > td:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > td:not(:last-child),
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > td:not(:last-child) {
+  padding-right: 10px;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > th,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > th {
+  font-weight: normal;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > th.th-stack-lexical-meaning-grammatical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > th.th-stack-lexical-meaning-grammatical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > th.th-stack-lexical-meaning-grammatical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > th.th-stack-lexical-meaning-grammatical-meaning {
+  font-size: 0.5em;
+  font-style: italic;
+  text-align: center;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > td.td-stack-lexical-meaning-grammatical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > td.td-stack-lexical-meaning-grammatical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > td.td-stack-lexical-meaning-grammatical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > td.td-stack-lexical-meaning-grammatical-meaning {
+  text-align: center;
+}
+table.table-stack-lexical-meaning-grammatical-meaning > tr > td.td-stack-lexical-meaning-grammatical-meaning-lexical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > thead > tr > td.td-stack-lexical-meaning-grammatical-meaning-lexical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > tbody > tr > td.td-stack-lexical-meaning-grammatical-meaning-lexical-meaning,
+table.table-stack-lexical-meaning-grammatical-meaning > tfoot > tr > td.td-stack-lexical-meaning-grammatical-meaning-lexical-meaning {
+  border-bottom: dotted 2px #505050;
+}
+table.table-chain-diagram > tr > th.th-chain-diagram-name,
+table.table-chain-diagram > thead > tr > th.th-chain-diagram-name,
+table.table-chain-diagram > tbody > tr > th.th-chain-diagram-name,
+table.table-chain-diagram > tfoot > tr > th.th-chain-diagram-name {
+  border: none;
+}
+table.table-chain-diagram > tr > td,
+table.table-chain-diagram > thead > tr > td,
+table.table-chain-diagram > tbody > tr > td,
+table.table-chain-diagram > tfoot > tr > td {
+  width: 130px;
+}
+table.table-chain-diagram > tr > th.th-chain-diagram-name-to-the-side,
+table.table-chain-diagram > thead > tr > th.th-chain-diagram-name-to-the-side,
+table.table-chain-diagram > tbody > tr > th.th-chain-diagram-name-to-the-side,
+table.table-chain-diagram > tfoot > tr > th.th-chain-diagram-name-to-the-side {
+  text-align: left;
+  padding-left: 20px;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-content,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-content,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-content,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-content {
+  border: solid 3px #d0d0d0;
+  text-align: center;
+  white-space: nowrap;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-example,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-example,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-example,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-example {
+  font-size: 0.87em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-example-multiple-blocks,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-example-multiple-blocks,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-example-multiple-blocks,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-example-multiple-blocks {
+  text-align: left;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-auxiliary-verb,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-auxiliary-verb,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-auxiliary-verb,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-auxiliary-verb {
+  border-radius: 10px 0 0 10px;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-auxiliary-verb.td-chain-diagram-chain-link,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-auxiliary-verb.td-chain-diagram-chain-link,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-auxiliary-verb.td-chain-diagram-chain-link,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-auxiliary-verb.td-chain-diagram-chain-link {
+  border-top: none;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-main-verb-form,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-main-verb-form,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-main-verb-form,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-main-verb-form {
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-main-verb-form.td-chain-diagram-chain-link,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-main-verb-form.td-chain-diagram-chain-link,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-main-verb-form.td-chain-diagram-chain-link,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-main-verb-form.td-chain-diagram-chain-link {
+  border-bottom: none;
+}
+table.table-chain-diagram > tr.tr-chain-diagram-skipped-block > td.td-chain-diagram-content,
+table.table-chain-diagram > thead > tr.tr-chain-diagram-skipped-block > td.td-chain-diagram-content,
+table.table-chain-diagram > tbody > tr.tr-chain-diagram-skipped-block > td.td-chain-diagram-content,
+table.table-chain-diagram > tfoot > tr.tr-chain-diagram-skipped-block > td.td-chain-diagram-content {
+  border-color: #808080;
+  color: transparent;
+}
+table.table-chain-diagram > tr.tr-chain-diagram-skipped-block > th.th-chain-diagram-name-to-the-side,
+table.table-chain-diagram > thead > tr.tr-chain-diagram-skipped-block > th.th-chain-diagram-name-to-the-side,
+table.table-chain-diagram > tbody > tr.tr-chain-diagram-skipped-block > th.th-chain-diagram-name-to-the-side,
+table.table-chain-diagram > tfoot > tr.tr-chain-diagram-skipped-block > th.th-chain-diagram-name-to-the-side {
+  color: #808080;
+  text-decoration: line-through 2px;
+}
+table.table-chain-diagram > tr > td.td-chain-diagram-chain-link-separator > hr,
+table.table-chain-diagram > thead > tr > td.td-chain-diagram-chain-link-separator > hr,
+table.table-chain-diagram > tbody > tr > td.td-chain-diagram-chain-link-separator > hr,
+table.table-chain-diagram > tfoot > tr > td.td-chain-diagram-chain-link-separator > hr {
+  margin: 0 auto;
+  border: none;
+  border-top: dashed #808080 2px;
+  width: 66.67%;
+}
+table.ad-hoc-table-chain-diagram-individual-building-blocks-in-custom-figure-content-list {
+  margin: 0 20px;
+}
+th.corner {
+  font-size: 0.87em;
+  background: linear-gradient(to top right, transparent calc(50% - 1px), #d0d0d0, transparent calc(50% + 1px));
+}
+th.corner > span.vertical {
+  position: absolute;
+  transform: translate(-115%, -5%) rotate(-90deg);
+}
+th.corner > span.horizontal {
+  position: absolute;
+  transform: translate(-30%, -170%);
+}
+.small {
+  font-size: 0.8em;
+}
+.rotate-outer {
+  position: relative;
+  min-width: 1.5em;
+}
+.rotate-inner {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  white-space: nowrap;
+}
+#all-verbforms-finite td,
+#all-verbforms-non-finite td {
+  height: 9em;
+}

@@ -15,6 +15,10 @@ body {
   border-radius: 10px;
 }
 
+a {
+  color: #b0b0b0;
+}
+
 /* Header */
 
 header > h1,
@@ -36,10 +40,19 @@ header > p {
   /* Setting bottom margin
   equal to the top margin of
   'Contact' header */
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 /* Main section */
+
+nav {
+  font-family: "DejaVu Sans Mono";
+  font-weight: bold;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 1.2em;
+}
 
 #links th {
   font-weight: normal;
@@ -50,7 +63,6 @@ header > p {
 #links td a {
   font-family: "DejaVu Sans Mono";
   font-size: 0.8em;
-  color: #b0b0b0;
   white-space: nowrap;
 }
 
@@ -67,10 +79,6 @@ header > p {
   so that the content centers vertically
   exactly in the middle of the page */
   margin-bottom: 0;
-}
-
-#contact a {
-  color: #b0b0b0;
 }
 
 /* Scrollbar */
