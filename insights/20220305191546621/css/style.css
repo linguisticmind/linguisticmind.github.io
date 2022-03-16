@@ -1,5 +1,5 @@
 html {
-  font-family: Extra, 'Source Serif Pro', 'Source Han Serif';
+  font-family: 'custom-extra', 'Source Serif Pro', 'Source Han Serif', serif;
   font-size: 24px;
   background-color: #202020;
   color: #d0d0d0;
@@ -45,7 +45,7 @@ div.div-by > div.div-by-author > span.span-by-entity {
   font-variant: normal;
 }
 div.div-by > div.div-by-license {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.66em;
   color: #b0b0b0;
   margin-top: 0.25em;
@@ -63,7 +63,7 @@ div.div-frame {
   border: 2px solid #d0d0d0;
 }
 div.div-license {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   font-size: 0.66em;
   color: #b0b0b0;
@@ -99,7 +99,7 @@ span.span-morpheme-separator {
   color: #505050;
 }
 span.span-n-a {
-  font-family: 'DejaVu Sans Mono';
+  font-family: 'DejaVu Sans Mono', monospace;
   font-size: 0.66em;
   font-style: normal;
   vertical-align: 0.2em;
@@ -459,7 +459,7 @@ table.table-custom-figure-content-list > tr > td.td-table-custom-figure-content-
 table.table-custom-figure-content-list > thead > tr > td.td-table-custom-figure-content-list-attribution,
 table.table-custom-figure-content-list > tbody > tr > td.td-table-custom-figure-content-list-attribution,
 table.table-custom-figure-content-list > tfoot > tr > td.td-table-custom-figure-content-list-attribution {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.5em;
   font-style: italic;
   color: #505050;

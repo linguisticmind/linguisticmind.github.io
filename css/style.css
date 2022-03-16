@@ -1,0 +1,85 @@
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #202020;
+  color: #d0d0d0;
+}
+
+body {
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  border: 3px #d0d0d0 dashed;
+  border-radius: 10px;
+}
+
+a {
+  color: #b0b0b0;
+}
+
+/* Header */
+
+header > h1,
+header > div.div-subheading,
+header > div.div-tagline,
+header > nav {
+  text-align: center;
+}
+
+header > h1 {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 32px;
+  margin-top: 0;
+}
+
+header > div.div-subheading {
+  font-size: 24px;
+}
+
+header > nav {
+  font-size: 1.2em;
+}
+
+header > div.div-subheading,
+header > nav {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-weight: bold;
+}
+
+header > div.div-subheading,
+header > div.div-tagline,
+header > nav {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* Main section */
+
+table.table-url-list th {
+  font-weight: normal;
+  text-align: left;
+  padding-right: 1em;
+}
+
+table.table-url-list td a {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+/* Contact */
+
+section.section-contact h2 {
+  font-family: 'DejaVu Sans Mono', monospace;
+  margin-top: 1.33em;
+}
+
+section.section-contact p {
+  font-size: 0.83em;
+  /* Removing default margin
+  so that the content centers vertically
+  exactly in the middle of the page */
+  margin-bottom: 0;
+}

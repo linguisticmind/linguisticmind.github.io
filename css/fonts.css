@@ -1,0 +1,118 @@
+/* Sans */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'),
+    local('SourceSansPro-Regular'),
+    url('fonts/SourceSansPro-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Italic'),
+    local('SourceSansPro-It'),
+    url('fonts/SourceSansPro-It.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold'),
+    local('SourceSansPro-Bold'),
+    url('fonts/SourceSansPro-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Bold Italic'),
+    local('SourceSansPro-BoldIt'),
+    url('fonts/SourceSansPro-BoldIt.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Monospace */
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('DejaVu Sans Mono'),
+    local('DejaVuSansMono'),
+    url('fonts/DejaVuSansMono.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('DejaVu Sans Mono Oblique'),
+    local('DejaVuSansMono-Oblique'),
+    url('fonts/DejaVuSansMono-Oblique.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('DejaVu Sans Mono Bold'),
+    local('DejaVuSansMono-Bold'),
+    url('fonts/DejaVuSansMono-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('DejaVu Sans Mono Bold Oblique'),
+    local('DejaVuSansMono-BoldOblique'),
+    url('fonts/DejaVuSansMono-BoldOblique.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Extra */
+
+@font-face {
+  font-family: 'custom-extra';
+  src: local('DejaVu Sans Mono'),
+    local('DejaVuSansMono'),
+    url('../fonts/DejaVuSansMono.ttf');
+  unicode-range: U+2205;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'custom-extra';
+  src: local('DejaVu Sans Mono Oblique'),
+    local('DejaVuSansMono-Oblique'),
+    url('../fonts/DejaVuSansMono-Oblique.ttf');
+  unicode-range: U+2205;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'custom-extra';
+  src: local('DejaVu Sans Mono Bold'),
+    local('DejaVuSansMono-Bold'),
+    url('../fonts/DejaVuSansMono-Bold.ttf');
+  unicode-range: U+2205;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'custom-extra';
+  src: local('DejaVu Sans Mono Bold Oblique'),
+    local('DejaVuSansMono-BoldOblique'),
+    url('../fonts/DejaVuSansMono-BoldOblique.ttf');
+  unicode-range: U+2205;
+  font-weight: bold;
+  font-style: italic;
+}
+
